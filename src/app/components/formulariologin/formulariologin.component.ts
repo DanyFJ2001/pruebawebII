@@ -21,7 +21,7 @@ export class FormulariologinComponent {
       console.log(accesso);
   
       let token = accesso.accessToken;
-      let email = formulario.value.email; // Tomamos el email del formulario
+      let email = formulario.value.email;
   
       if (token) {
         localStorage.setItem("login", "true");
