@@ -1,0 +1,115 @@
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<div class="min-h-screen bg-gray-100">
+    <div class="flex">
+      <!-- Sidebar -->
+      <div class="w-64 bg-gradient-to-r from-indigo-600 to-blue-500 text-white">
+        <div class="p-6">
+          <h2 class="text-3xl font-semibold">Dashboard</h2>
+        </div>
+        <ul class="space-y-4 p-4">
+          <li><a href="#" class="text-gray-300 hover:text-white flex items-center"><i class="fas fa-home mr-3"></i> Home</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white flex items-center"><i class="fas fa-users mr-3"></i> Estudiantes</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white flex items-center"><i class="fas fa-chalkboard-teacher mr-3"></i> Docentes</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white flex items-center"><i class="fas fa-tasks mr-3"></i> Tareas</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white flex items-center"><i class="fas fa-graduation-cap mr-3"></i> Calificaciones</a></li>
+          <button (click)="logout()" type="submit" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-6 mb-2 w-full">Cerrar sesión</button>
+        </ul>
+      </div>
+  
+      <!-- Main Content -->
+      <div class="flex-1 p-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+          <h1 class="text-3xl font-semibold text-indigo-800">Dashboard</h1>
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg flex items-center hover:bg-indigo-700 transition duration-200"><i class="fas fa-user-plus mr-2"></i> Añadir Estudiante</button>
+        </div>
+  
+        <!-- Stats Section -->
+        <div class="grid grid-cols-3 gap-6 mb-6">
+          <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+            <i class="fas fa-users text-indigo-600 text-3xl mr-4"></i>
+            <div>
+              <h3 class="text-xl font-medium">Estudiantes Totales</h3>
+              <p class="text-3xl font-bold">120</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+            <i class="fas fa-user-check text-green-600 text-3xl mr-4"></i>
+            <div>
+              <h3 class="text-xl font-medium">Estudiantes Activos</h3>
+              <p class="text-3xl font-bold">95</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+            <i class="fas fa-user-slash text-red-600 text-3xl mr-4"></i>
+            <div>
+              <h3 class="text-xl font-medium">Estudiantes Inactivos</h3>
+              <p class="text-3xl font-bold">25</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Table Section -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h2 class="text-2xl font-semibold mb-4">Lista de Estudiantes</h2>
+          <table class="min-w-full table-auto">
+            <thead>
+              <tr class="border-b">
+                <th class="py-3 px-4 text-left">Nombre</th>
+                <th class="py-3 px-4 text-left">Email</th>
+                <th class="py-3 px-4 text-left">Fecha de Inscripción</th>
+                <th class="py-3 px-4 text-left">Estado</th>
+                <th class="py-3 px-4 text-left">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b hover:bg-gray-50">
+                <td class="py-3 px-4">Juan Pérez</td>
+                <td class="py-3 px-4">juancorreo.com</td>
+                <td class="py-3 px-4">2022-03-01</td>
+                <td class="py-3 px-4 text-green-600">Activo</td>
+                <td class="py-3 px-4">
+                  <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg flex items-center hover:bg-yellow-600"><i class="fas fa-edit mr-2"></i> Editar</button>
+                  <button class="bg-red-500 text-white px-4 py-2 rounded-lg flex items-center hover:bg-red-600"><i class="fas fa-trash mr-2"></i> Eliminar</button>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-gray-50">
+                <td class="py-3 px-4">Ana Gómez</td>
+                <td class="py-3 px-4">anacorreo.com</td>
+                <td class="py-3 px-4">2022-05-15</td>
+                <td class="py-3 px-4 text-red-600">Inactivo</td>
+                <td class="py-3 px-4">
+                  <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg flex items-center hover:bg-yellow-600"><i class="fas fa-edit mr-2"></i> Editar</button>
+                  <button class="bg-red-500 text-white px-4 py-2 rounded-lg flex items-center hover:bg-red-600"><i class="fas fa-trash mr-2"></i> Eliminar</button>
+                </td>
+              </tr>
+              <!-- Más filas de estudiantes pueden ir aquí -->
+            </tbody>
+          </table>
+        </div>
+  
+        <!-- Additional Section (Optional) -->
+        <div class="grid grid-cols-2 gap-6 mt-6">
+          <!-- Recent Activities -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-4">Actividades Recientes</h2>
+            <ul>
+              <li class="py-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Juan Pérez completó una tarea</li>
+              <li class="py-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Ana Gómez se inscribió al curso de Matemáticas</li>
+              <li class="py-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Luis Martínez actualizó su perfil</li>
+            </ul>
+          </div>
+  
+          <!-- Task Completion Progress (Gráfico) -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-4">Progreso de Tareas</h2>
+            <div class="w-full h-40 bg-gray-200 rounded-lg flex items-center justify-center">
+              <p class="text-center text-xl font-bold">50% Completo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

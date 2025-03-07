@@ -1,0 +1,37 @@
+{
+  "usuarios": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "email": "dany-joelito345@hotmail.com",
+      "password": "$2a$10$wlTekARj9ncncMlXuOOlL.9kfGjRwA2pOTwSv/Ftpr9x1GRVxK3Tm",
+      "id": 1
+    },
+    {
+      "email": "dany-joelito345@outlook.com",
+      "password": "$2a$10$.U2gAUl/k/9eCfbz.F/lbeDuylZlZOeJVznlPOxE7bbhLgXHPMTeK",
+      "id": 2
+    },
+    {
+      "email": "dany-joelito345@docentes.com",
+      "password": "$2a$10$qCfrIi550cmPTcB/ARa4LeiQqze3Jrh4HnxEgCvH/zYuQtrWYUAPe",
+      "id": 3
+    },
+    {
+      "email": "dany-joelito345@cocentes.com",
+      "password": "$2a$10$2kZaGAVI7EvJZMsKJTCrYuFBrLHSWp3.idwmFeJaxJxKXu5sCbmj2",
+      "id": 4
+    },
+    {
+      "email": "veronica@docentes.com",
+      "password": "$2a$10$V/j9QsnL0H3dC2XdN3f.3edd1dYT32HFP/tuJEcEcFjA6M7bnjIiu",
+      "id": 5
+    }
+  ]
+}

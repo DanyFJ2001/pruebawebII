@@ -1,0 +1,334 @@
+/* Reset y fuentes generales */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sección Hero */
+.hero {
+    position: relative;
+    background: url('../../../assets/imagenes/4.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.btn {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+/* Sección About Us */
+.about {
+    padding: 50px 0;
+    background: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.about-header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-header span {
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+}
+
+.about-header span::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: red;
+    margin-top: 5px;
+}
+
+.about-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.about-text ul li::before {
+    content: "✔";
+    color: red;
+    margin-right: 8px;
+}
+
+.about-details {
+    width: 40%;
+}
+
+.about-details p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.texto {
+    max-width: 50%;
+}
+
+h4 {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+h2 {
+    color: #a93226;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #7b241c;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    color: #943126;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+}
+
+/* Ajuste de la disposición de imágenes */
+.imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 45%;
+    align-items: center;
+}
+
+.img-grande {
+    width: 100%;
+    height: auto;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    border-radius: 10px;
+}
+
+.img-pequenas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img-pequenas img {
+    width: 100%;
+    border-radius: 10px;
+}
+.tomate-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+    gap: 20px;
+    padding: 50px;
+}
+
+.tomate-imagen img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 15px;
+}
+
+.tomate-contenido {
+    background: #ffcab1; /* Fondo en tono tomate claro */
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 5px 5px 15px rgba(255, 99, 71, 0.4);
+}
+
+.tomate-titulo {
+    color: #b22222; /* Rojo tomate oscuro */
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.tomate-texto {
+    color: #8b0000; /* Rojo oscuro */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.tomate-boton {
+    background-color: #ff6347; /* Tomate fuerte */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tomate-boton:hover {
+    background-color: #d63031; /* Rojo tomate más oscuro al pasar el mouse */
+}
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Estilos del contenido de texto */
+.content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.title {
+    font-size: 28px;
+    color: #FF6347; /* Color tomate */
+    font-weight: bold;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Sección de características */
+.features {
+    margin-top: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #FF6347; /* Color tomate */
+}
+
+.feature h4 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.feature p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    color: #666;
+}
+
+/* Estilos de la imagen */
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
